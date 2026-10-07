@@ -1,0 +1,11 @@
+# Fin de línea normalizado (LF en el repo) para que Windows, macOS y Linux vean los mismos archivos.
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.webp binary
+*.mp4 binary
+*.mov binary
+*.m4a binary
+*.mp3 binary
+*.wav binary

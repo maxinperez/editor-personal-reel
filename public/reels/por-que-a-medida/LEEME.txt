@@ -1,0 +1,7 @@
+Archivos de este reel (no se suben al repositorio)
+==================================================
+voz.m4a       Tu grabación leyendo el guion. Sirve audio (.mp3, .wav, .m4a, .aac, .ogg)
+              o un video tuyo hablando a cámara (.mp4, .mov, .webm).
+              Después corré:  npm run voz -- por-que-a-medida
+timing.json   Lo genera "npm run voz": tiempos de cada escena y palabra. No lo edites a mano.
+escena-N.png / *.mp4   Imágenes y videos de las escenas "image" y "clip" (si el guion las usa).

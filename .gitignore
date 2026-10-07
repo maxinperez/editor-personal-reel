@@ -1,7 +1,39 @@
-node_modules
-dist
-.DS_Store
-.env
+# Dependencias y builds
+node_modules/
+dist/
+build/
 
-# Ignore the output video from Git but not videos you import into src/.
-out
+# Videos, portadas y vistas exportadas
+out/
+
+# Secretos (la clave de Pexels va en .env; ver .env.example)
+.env
+.env.*
+!.env.example
+
+# Whisper local: programa y modelos (los baja `npm run voz`, pesan cientos de MB)
+.whisper/
+
+# Material de cada reel: voz, clips de stock, imágenes y transcripciones.
+# Son personales o tienen licencias que no permiten redistribuirlos. Solo se versionan los LEEME.
+public/reels/**/*
+!public/reels/**/
+!public/reels/**/LEEME.md
+!public/reels/**/LEEME.txt
+
+# Música (con licencia de uso, no de redistribución)
+public/musica/*
+!public/musica/LEEME.txt
+
+# Material de referencia local (videos de terceros, originales)
+referencias/
+
+# Sistema y editores
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.log
+npm-debug.log*

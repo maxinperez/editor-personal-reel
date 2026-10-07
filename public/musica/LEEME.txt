@@ -1,0 +1,8 @@
+Música de fondo (opcional)
+==========================
+Copiá acá una pista (mp3 o wav) con derechos de uso para redes, por ejemplo "fondo.mp3", y en el guion del reel agregá:
+
+  music: { src: "musica/fondo.mp3", volume: 0.1 },
+
+El volumen va de 0 a 1; 0.08-0.12 deja la voz bien clara.
+Usá solo música que tengas permitido usar comercialmente (biblioteca de audio de Instagram, Pixabay, YouTube Audio Library, etc.).

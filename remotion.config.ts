@@ -8,5 +8,9 @@
 import { Config } from "@remotion/cli/config";
 
 Config.setRspack(true);
-Config.setVideoImageFormat("jpeg");
+// PNG en vez de JPEG: el texto fino y los bordes quedan nítidos y el video sale en yuv420p estándar.
+Config.setVideoImageFormat("png");
+Config.setPixelFormat("yuv420p");
+Config.setCodec("h264");
+Config.setCrf(18);
 Config.setOverwriteOutput(true);

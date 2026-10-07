@@ -1,18 +1,28 @@
 {
-  "name": "reels",
+  "name": "reels-ayc",
   "version": "1.0.0",
-  "description": "My Remotion video",
-  "repository": {},
-  "license": "UNLICENSED",
+  "description": "Generador de reels de Instagram de A&C: voz + guion + B-roll de Pexels → video editado con Remotion",
+  "license": "MIT",
   "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
   "dependencies": {
+    "@remotion/bundler": "4.0.533",
+    "@remotion/captions": "4.0.533",
     "@remotion/cli": "4.0.533",
+    "@remotion/google-fonts": "4.0.533",
+    "@remotion/install-whisper-cpp": "4.0.533",
+    "@remotion/renderer": "4.0.533",
+    "lucide-react": "1.52.0",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "remotion": "4.0.533"
   },
   "devDependencies": {
     "@remotion/eslint-config-flat": "4.0.533",
+    "@types/node": "24.19.1",
     "@types/react": "19.2.7",
     "@types/web": "0.0.166",
     "eslint": "9.39.5",
@@ -20,9 +30,15 @@
     "typescript": "5.9.3"
   },
   "scripts": {
-    "dev": "remotion studio",
-    "build": "remotion bundle",
-    "upgrade": "remotion upgrade",
-    "lint": "eslint src && tsc"
+    "dev": "node node_modules/@remotion/cli/remotion-cli.js studio",
+    "voz": "node scripts/voz.ts",
+    "vista": "node scripts/vista.ts",
+    "render": "node scripts/render.ts",
+    "portadas": "node scripts/portadas.ts",
+    "stock": "node scripts/stock.ts",
+    "prompts": "node scripts/prompts.ts",
+    "remotion": "node node_modules/@remotion/cli/remotion-cli.js",
+    "lint": "node node_modules/eslint/bin/eslint.js src scripts && node node_modules/typescript/bin/tsc",
+    "format": "node node_modules/prettier/bin/prettier.cjs --write src scripts docs README.md"
   }
 }
