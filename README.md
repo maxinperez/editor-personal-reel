@@ -113,7 +113,6 @@ docs/             guía de uso, estilo editorial, material y licencias
 ## Licencias
 
 - **Código:** [MIT](LICENSE). Podés usarlo, modificarlo y redistribuirlo, manteniendo el aviso de copyright.
-- **Marca:** la licencia MIT no incluye el nombre ni el logo de A&C (`public/brand/`), que no se pueden reutilizar.
 - **Remotion:** gratis para personas y empresas de hasta 3 personas, incluso con uso comercial. Equipos más
   grandes necesitan una [licencia de empresa](https://www.remotion.pro/license).
 - **Material de terceros:** ver [docs/material-y-licencias.md](docs/material-y-licencias.md) (Pexels,
